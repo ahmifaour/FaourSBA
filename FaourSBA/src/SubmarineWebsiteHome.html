@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type = "text/javascript" src = "SubmarineWebsite.js"></script>
+<style>
+	header, nav, section {
+		background-color: white;
+	}
+	
+	section {
+		padding: 5px;
+	}
+	
+</style>
+<meta charset="ISO-8859-1">
+<title>Submariner's Alexandria</title>
+<link rel = "stylesheet" href = "SubmarineWebsiteHome.css">
+</head>
+<body>
+<div class="layout">
+  	<h1>Submariner's Alexandria</h1>
+  	<header>Home</header>
+  	<nav><a href="SubmarineWebsiteHome.html">Home<br><br><br></a><a href="SubmarineWebsiteUS.html">Submarines of the <br>United States' <br>Navy</a><br><br><br><a href="SubmarineWebsiteUSSR.html">Submarines from <br>the Soviet Union/Russian Federation's Navy</a></nav>
+  	<section>Welcome to the Submariner's Alexandria!<br><br><br>This website is dedicated to the databasing of Cold-War submarines in both the arsenals of the United States' Navy, and the Soviet Union's/Russia's Navy. This database includes: both electric-diesel and nuclear powered submarines from both nations, common armaments for each submarine class, each submarine classes' combat specifications, and prolific stories regarding each submarine class (where applied). If you are new here, please make an account! You can set your favorite submarine for all the other users to see.
+		<br>
+		<br>
+		<br>
+		<div>
+			<p>List of Submarines on this site:</p>
+			<p id="randomSub"></p>
+			<script type="text/javascript">
+				var subArray = Array.from(subSet)
+				var subString = subArray.join(', ');
+				document.getElementById('randomSub').innerHTML = subString;
+			</script>
+			<p id = "total"></p>
+			<script type="text/javascript">
+				var subArrayLength = subArray.length;
+				document.getElementById('total').innerHTML = "The total number of subs listed is: " + subArray.length;
+			</script>
+		</div>	
+		<div>
+			<p>-------------------------------------</p>
+			<p>Please create an account!</p>
+		</div>
+		<form onsubmit= "validatePass()">
+			<label for="email">Enter your email:</label><br>
+			<br>
+			<input type="text" id="email" name="email">
+			<br>
+			<br>
+			<label for="password">Please enter a password:</label><br>
+			<br>
+			<input type="password" id="password" name="password">
+			<br>
+			<br>
+			<br>
+			<br>
+			<label for="favoriteSub">Which of our listed submarines is your favorite?:</label>
+			<select id="favoriteSub" name="favoriteSub">
+				<option value="barbel">Barbel-class</option>
+				<option value="skipjack">Skipjack-class</option>
+				<option value="permit">Permit-class</option>
+				<option value="sturgeon">Sturgeon-class</option>
+				<option value="narwhal">Narwhal-class</option>
+				<option value="losangeles">Los Angeles-class</option>
+				<option value="seawolf">Seawolf-class</option>
+				<option value="georgewash">George Washington-class</option>
+				<option value="ohio">Ohio-class</option>
+				<option value="kilo">Kilo-class</option>
+				<option value="alfa">Alfa-class</option>
+				<option value="mike">Mike-class</option>
+				<option value="akula">Akula-class</option>
+				<option value="typhoon">Typhoon-class</option>
+			</select>
+			<br>
+			<br>
+			<br>
+			<label for="addSub">Think we should add a submarine, or add a story to an existing submarine? Please write one down below:</label><br>
+			<br>
+			<input type="text" id = "addSub" name = "addSub"><br>
+			<br>
+			<br>
+			<label for="oops">Did we miss something or make an error? Please let us know down below:</label><br>
+			<br>
+			<input type="text" id="oops" name = "oops">
+			<br>
+			<br>
+			<input type="submit" id = "submit" name = "Submit" onclick="thankYou()">
+		</form>
+		<br>
+		<br>
+		<br>
+	</section>
+</div>
+</body>
+</html>

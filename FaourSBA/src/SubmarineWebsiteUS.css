@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+.layout {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+	width: 1000px;
+}
+
+nav, section {
+  float: left;
+}
+
+nav {
+  width: 188px;
+  margin-right: 9px;
+}
+
+section {
+  width: 781px;
+  padding: 5px;
+}
+
+table, th, td {
+	width: 740;
+	border: 1px solid black;
+}
+
+td{
+	padding: 15px;
+}
+
+body {
+  background: #546E7A;
+  color: #FFF;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin: 0;
+}
+
+header, nav, section {
+  border: 1px solid white;
+  margin-bottom: 9px;
+  border-radius: 3px;
+}
+
+header {
+  padding: 19px 0;
+}
+
+nav {
+  padding: 180px 0;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}

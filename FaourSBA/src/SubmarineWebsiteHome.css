@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+.layout {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+	width: 1000px;
+}
+
+nav, section {
+  float: left;
+}
+
+nav {
+  width: 188px;
+  margin-right: 9px;
+}
+
+section {
+  width: 781px;
+}
+
+body {
+  background-image: url("https://static01.nyt.com/images/2022/02/01/climate/25cli-iceberg1/25cli-iceberg1-superJumbo-v3.jpg");
+  background-size: cover;
+  color: solid black;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin: 0;
+}
+
+header, nav, section {
+  border: 1px solid black;
+  margin-bottom: 9px;
+  border-radius: 3px;
+}
+
+header {
+  padding: 19px 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+nav {
+  padding: 180px 0;
+}
+
+div::first-letter {
+	text-transform: capitalize;
+}
