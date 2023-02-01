@@ -1,0 +1,32 @@
+//REQUIREMENTS: Any browser that can support HTML and Javascript.
+
+//Simple library for Cold Wars submarines. This library contains submarines from the US Navy, and the Soviet Union/Russian Navy. This database includes: the sub's class, the sub's armament and additional information about the submarine.
+
+//The "Home" page is the main nexus of the website. Here: users are greeted, users are given a summary of the website's purpose, users are shown a list of submarines listed on the site along with their total number, and a "create account" section containing four forms (email, password, sub suggestions, noticed incorrect information). There is also a dropdown box for the user's favorite submarine. Passwords must be at least 8 characters in length (Regex validation). Across all pages, there is a navigation bar on the left-hand side of the screen to navigate between all three pages.
+
+//The "Submarine's of the United States' Navy" page is dedicated to the cataloging of US Navy submarines. Here, users can see a table containing: an image of the submarine, the class of submarine, the submarine's armament and additional information surrounding that novel submarine class. There are 9 US subs included in this website: Barbel-class, Skipjack-class, Permit-class, Sturgeon-class, Narwhal-class, Los Angeles-class, Seawolf-class, George Washington-class, and the Ohio-class.
+
+//The "Submarine's from the Soviet Union/Russian Federation's Navy" page is dedicated to the cataloging of USSRN/RN submarines. Here, users can see a table containing: an image of the submarine, the class of submarine, the submarine's armament and additional information surrounding that novel submarine class. There are 5 USSRN/RN subs included in this website: Kilo-class, Alfa-class, Mike-class, Akula-class, and the Typhoon-class. For CSS, styling was generally the same across all three web pages with minor changes such as backgrounds. The only main difference in styling between the Home page and the catalog pages are the tables as well as the "Home" display font on the Home page.
+
+//JS was kept rather clean to navigate functions. Functions include: validatePass() and thankYou(). Also included in the JS file is the set "subSet" which contains a list of every submarine cataloged into the website (source of the list of subs on the homepage, as well as the total number of subs).
+
+//Acknowledgements (Wikipedia links for supplemental information):
+
+Barbel-class: https://en.wikipedia.org/wiki/Barbel-class_submarine
+Skipjack-class: https://en.wikipedia.org/wiki/Skipjack-class_submarine
+Permit-class: https://en.wikipedia.org/wiki/Permit-class_submarine
+Sturgeon-class: https://en.wikipedia.org/wiki/Sturgeon-class_submarine
+Narwhal-class: https://en.wikipedia.org/wiki/Narwhal-class_submarine
+Los Angeles-class: https://en.wikipedia.org/wiki/Los_Angeles-class_submarine
+Seawolf-class: https://en.wikipedia.org/wiki/Seawolf-class_submarine
+George Washington-class https://en.wikipedia.org/wiki/George_Washington-class_submarine
+Ohio-class: https://en.wikipedia.org/wiki/Ohio-class_submarine
+
+Kilo-class: https://en.wikipedia.org/wiki/Kilo-class_submarine
+Alfa-class: https://en.wikipedia.org/wiki/Alfa-class_submarine
+Mike-class: https://en.wikipedia.org/wiki/Mike-class_submarine
+Akula-class: https://en.wikipedia.org/wiki/Akula-class_submarine
+Typhoon-class: https://en.wikipedia.org/wiki/Typhoon-class_submarine
+
+
+//GitHub readMe URL: https://github.com/ahmifaour/FaourSBA/blob/main/README.md

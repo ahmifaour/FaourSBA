@@ -35,8 +35,11 @@
 			</script>
 			<p id = "total"></p>
 			<script type="text/javascript">
-				var subArrayLength = subArray.length;
-				document.getElementById('total').innerHTML = "The total number of subs listed is: " + subArray.length;
+				var i;
+				for(i=0;i<subArray.length+1;i++){
+					
+				document.getElementById('total').innerHTML = "The total number of subs listed is: " + i;
+				}
 			</script>
 		</div>	
 		<div>
